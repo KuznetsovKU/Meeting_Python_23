@@ -11,8 +11,7 @@ crane_amount = int(input('Введите общее количество жур�
 def find_solution(amount):
     if amount % 6 == 0:
         kate_result = crane_amount // 3 * 2
-        piter_result = (crane_amount - kate_result) // 2
-        serg_result = piter_result
+        piter_result = serg_result = (crane_amount - kate_result) // 2
         print(f"Результат Пети: {piter_result}, результат Кати: {kate_result}, результат Сережи: {serg_result}")
     else:
         print("Решения отсутствуют. Проверьте введенные данные")
