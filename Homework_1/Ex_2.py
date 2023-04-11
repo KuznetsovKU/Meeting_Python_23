@@ -28,10 +28,9 @@ def count_sum_by_int_type(input_value):
     if is_number(input_value):
         number = int(input_value)
         summ_digits = 0
-        while number // 10 != 0:
+        while number > 0:
             summ_digits += number % 10
-            number = number // 10
-        summ_digits += number
+            number //= 10
         print(f'Сумма цифр по int равна: {summ_digits}')
     else:
         print('Введите корректные данные!')
